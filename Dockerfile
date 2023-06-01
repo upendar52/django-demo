@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 WORKDIR /app
 COPY requirements.txt /app/
-COPY manage.py /app/
+COPY devops /app/
 RUN apt-get update
 RUN apt-get install -y python3
 RUN apt-get install -y python3-pip
